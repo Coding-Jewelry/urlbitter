@@ -1646,3 +1646,80 @@ HTTP Origin header (http://localhost:8001) didn't match request.base_url (http:/
 Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 192.168.88.167 at 2018-03-12 04:29:20 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1357ms (Views: 1343.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.88.167 at 2018-03-12 04:29:46 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 192.168.88.167 at 2018-03-12 04:30:02 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as JSON
+  Parameters: {"_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "authenticity_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "email"=>"anatoly_halfin@outlook.com", "password"=>"[FILTERED]", "utf8"=>"✓"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'anatoly_halfin@outlook.com' LIMIT 1[0m
+Completed 200 OK in 102ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for 192.168.88.167 at 2018-03-12 04:30:06 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as JSON
+  Parameters: {"_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "authenticity_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "email"=>"anatoly_halfin@outlook.com", "password"=>"[FILTERED]", "utf8"=>"✓"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'anatoly_halfin@outlook.com' LIMIT 1[0m
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/myurls" for 192.168.88.167 at 2018-03-12 04:30:06 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShortenurlsController#show as JSON
+  Parameters: {"_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "authenticity_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "slug"=>"8z9a16tti9iat5b2dt7getkay8732h0w&1", "utf8"=>"✓"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`slug` = '8z9a16tti9iat5b2dt7getkay8732h0w&1' LIMIT 1[0m
+  [1m[36mShortenurl Load (9.5ms)[0m  [1m[34mSELECT `shortenurls`.* FROM `shortenurls` WHERE `shortenurls`.`user_id` = 1[0m
+Completed 200 OK in 105ms (Views: 42.7ms | ActiveRecord: 17.2ms)
+
+
+Started POST "/myurls" for 192.168.88.167 at 2018-03-12 04:30:22 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShortenurlsController#show as JSON
+  Parameters: {"_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "authenticity_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "slug"=>"8z9a16tti9iat5b2dt7getkay8732h0w&1", "utf8"=>"✓"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`slug` = '8z9a16tti9iat5b2dt7getkay8732h0w&1' LIMIT 1[0m
+  [1m[36mShortenurl Load (0.3ms)[0m  [1m[34mSELECT `shortenurls`.* FROM `shortenurls` WHERE `shortenurls`.`user_id` = 1[0m
+Completed 200 OK in 9ms (Views: 1.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/myurls" for 192.168.88.167 at 2018-03-12 04:30:29 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShortenurlsController#show as JSON
+  Parameters: {"_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "authenticity_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "slug"=>"8z9a16tti9iat5b2dt7getkay8732h0w&1", "utf8"=>"✓"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`slug` = '8z9a16tti9iat5b2dt7getkay8732h0w&1' LIMIT 1[0m
+  [1m[36mShortenurl Load (0.8ms)[0m  [1m[34mSELECT `shortenurls`.* FROM `shortenurls` WHERE `shortenurls`.`user_id` = 1[0m
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 192.168.88.167 at 2018-03-12 04:30:33 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as JSON
+  Parameters: {"_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "authenticity_token"=>"LpsvuhtLWWJ7sOEegwtILFpBoy8qxCdNHKPlO9M2pdult9/SwPSvsHiiNxun+Xb6qklTV1g6MBR/yAlmEK7eLA==", "utf8"=>"✓"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ltr/notify/new" for 192.168.88.167 at 2018-03-12 04:30:33 -0700
+Cannot render console from 192.168.88.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Parameters: {"path"=>"notify/new"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 128ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+

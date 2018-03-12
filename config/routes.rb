@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 	match '(:anything)' => 'application#nothing', via: [:options]
 
-	root 'application#hello'
+	root 'static_pages#home'
 
 	get '/:key', to: 'application#goToOuterUrl'
 
